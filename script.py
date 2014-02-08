@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: cp1252 -*-
-#    Copyright 2013, Chaz Littlejohn 
+#    Copyright 2014, Chaz Littlejohn 
 #        ________  ____  _   __   ________  ______________
 #       /  _/ __ \/ __ \/ | / /  / ____/ / / / ____/ ____/
 #       / // /_/ / / / /  |/ /  / /   / /_/ / __/ / /_    
@@ -29,8 +29,6 @@ import shutil
 import episodes
 import difflib
 from latin_to_ascii import latin1_to_ascii
-
-directory = 'D:\\TV Shows\\Iron Chef'
 
 re_iron_chef_1 = re.compile("(?P<IRON>[a-z\s]+)\svs\s(?P<CHALLENGER>[a-z\.\s]+)\s(overtime\s)?\((?P<INGREDIENT>[a-z\s\'&]+)\)")
 re_iron_chef_2 = re.compile("iron\schef\s\-\s(?P<INGREDIENT>[a-z\s]+?)(\s\(.+?\))?(?P<BATTLE>\s(battle)?(\srematch|\s\d+)?(\sovertime[a-z\s]+)?\s?)\-\s(?P<IRON>[a-z\s]+)\svs\s(?P<CHALLENGER>[a-z\s]+)")
